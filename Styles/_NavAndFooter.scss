@@ -1,3 +1,4 @@
+@use "Font";
 nav{
     width: 100%;
     top: 0;
@@ -5,10 +6,23 @@ nav{
     position: -webkit-sticky;
     display: flex;
     justify-content: flex-end;
+    background-color: white;
     align-items: center;
+    border-width: 3px 0;
+    border-color: black;
+
+    a{
+        margin: 0 15px;
+        font-size: Font.$fontsize*1.5;
+    }
+    .selected{
+        color: blue;
+        font-weight: 500;
+    }
     img{
         width: 100px;
         margin-right: auto;
+        margin-left: 25px;
     }
 }
 footer{
